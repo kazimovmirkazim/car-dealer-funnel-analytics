@@ -1,3 +1,5 @@
+![cover](images/cover.png)
+
 # Car Dealer Funnel Analytics
 
 Lead-to-sale analysis for a car dealer group: where customers drop out, which channels bring buyers (not just leads), how duplicates distort conversion, why market share can fall while sales hold up, and which models a "92% of plan" total is hiding.
