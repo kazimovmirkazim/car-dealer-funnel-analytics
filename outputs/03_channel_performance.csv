@@ -1,0 +1,9 @@
+channel,leads,visits,sales,visit_rate_pct,lead_to_sale_pct,share_of_sales_pct
+Instagram,3147,525,101,16.7,3.2,11.0
+Facebook,2310,374,53,16.2,2.3,5.8
+Call center,1763,799,255,45.3,14.5,27.7
+Classifieds,1619,396,60,24.5,3.7,6.5
+Google Ads,1430,453,105,31.7,7.3,11.4
+Website form,1068,351,91,32.9,8.5,9.9
+Walk-in,483,483,179,100.0,37.1,19.5
+Referral,321,182,75,56.7,23.4,8.2

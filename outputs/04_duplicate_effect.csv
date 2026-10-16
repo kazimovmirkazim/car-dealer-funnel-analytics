@@ -1,0 +1,9 @@
+channel,raw_leads,unique_leads,duplicate_pct,conversion_raw_pct,conversion_dedup_pct
+Instagram,4301,3147,26.8,2.39,3.27
+Facebook,3037,2310,23.9,1.81,2.38
+Classifieds,2089,1619,22.5,2.87,3.71
+Google Ads,1667,1430,14.2,6.42,7.48
+Website form,1208,1068,11.6,7.78,8.8
+Call center,1963,1763,10.2,13.14,14.63
+Referral,347,321,7.5,22.19,23.99
+Walk-in,483,483,0.0,37.06,37.06
