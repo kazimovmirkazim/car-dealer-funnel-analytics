@@ -1,9 +1,9 @@
 brand,model,q4_target,stock_units
-Brand A,A1 Sedan,45,25
-Brand A,A3 SUV,40,20
-Brand A,A5 EV,35,40
-Brand B,B2 Hatch,22,18
-Brand B,B4 SUV,42,20
-Brand B,B6 EV,30,35
-Brand C,C3 SUV,32,22
-Brand C,C7 Pickup,22,15
+Toyota,Corolla,45,25
+Toyota,RAV4,40,20
+Toyota,bZ4X,35,40
+Hyundai,i20,22,18
+Hyundai,Tucson,42,20
+Hyundai,Ioniq 5,30,35
+Mitsubishi,Outlander,32,22
+Mitsubishi,L200,22,15

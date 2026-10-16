@@ -2,7 +2,7 @@
 
 Lead-to-sale analysis for a car dealer group: where customers drop out, which channels bring buyers (not just leads), how duplicates distort conversion, why market share can fall while sales hold up, and which models a "92% of plan" total is hiding.
 
-It mirrors the questions I answer every week as a marketing and sales analyst in automotive retail, **built on synthetic data**. All brands, models and numbers are invented; nothing comes from a real company.
+It mirrors the questions I answer every week as a marketing and sales analyst in automotive retail, **built on synthetic data**. Brand and model names are real cars sold in Azerbaijan (Toyota, Hyundai, Mitsubishi) so the analysis reads like the real thing, but **every number is generated**: nothing here describes the actual results of any dealer or brand, and nothing comes from my employer.
 
 **Stack:** SQL (SQLite, window functions, CTEs) · Python (pandas, NumPy) · matplotlib
 
@@ -36,7 +36,7 @@ Share went from 11.5% to 8.9%. That is **2.7 percentage points**, or a **23% dro
 
 ![Stock vs target](images/05_stock_vs_target.png)
 
-Q4 plan is 92% complete overall. Two EV models are at about half of target and hold the most stock. The total looks fine; the model view shows where action is needed. → [`sql/06_stock_vs_target.sql`](sql/06_stock_vs_target.sql)
+Q4 plan is 92% complete overall. The two EVs, Toyota bZ4X and Hyundai Ioniq 5, are at about half of target and hold the most stock. The total looks fine; the model view shows where action is needed. → [`sql/06_stock_vs_target.sql`](sql/06_stock_vs_target.sql)
 
 ---
 

@@ -44,7 +44,7 @@ def run_queries() -> dict[str, pd.DataFrame]:
 def headline(fig, title: str, subtitle: str) -> None:
     fig.text(0.04, 0.95, title, fontsize=18, fontweight="bold", va="top")
     fig.text(0.04, 0.885, subtitle, fontsize=12, color=INK_2, va="top")
-    fig.text(0.04, 0.02, "Synthetic data. All brands, models and numbers are invented.",
+    fig.text(0.04, 0.02, "Synthetic numbers. Model names are real cars; the figures do not describe any dealer or brand.",
              fontsize=9, color=MUTED)
 
 
@@ -168,10 +168,10 @@ def chart_stock(df: pd.DataFrame) -> None:
     df = df.sort_values("target_pct", ascending=False).reset_index(drop=True)
     total_pct = 100 * df["sold_q4"].sum() / df["q4_target"].sum()
     colors = [CRITICAL if f == "behind target, high stock" else BLUE for f in df["flag"]]
-    labels = [f"{m}  ({b})" for m, b in zip(df["model"], df["brand"])]
+    labels = [f"{b} {m}" for m, b in zip(df["model"], df["brand"])]
 
     fig, ax = plt.subplots(figsize=(16, 9))
-    fig.subplots_adjust(left=0.17, right=0.80, top=0.80, bottom=0.10)
+    fig.subplots_adjust(left=0.19, right=0.80, top=0.80, bottom=0.10)
     y = range(len(df))[::-1]
     ax.barh(list(y), df["target_pct"], color=colors, height=0.62)
     ax.axvline(100, color=INK_2, lw=1, ls="--")

@@ -1,6 +1,7 @@
 """Generate a synthetic car dealer dataset: leads, sales funnel, market totals, stock.
 
-All brands, models, channels and numbers are invented. Nothing here comes from a real company.
+Brand and model names are real cars sold in Azerbaijan, used for realism.
+Every number is synthetic: nothing describes the actual results of any dealer or brand.
 """
 from pathlib import Path
 import sqlite3
@@ -12,9 +13,9 @@ SEED = 42
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 BRANDS = {
-    "Brand A": ["A1 Sedan", "A3 SUV", "A5 EV"],
-    "Brand B": ["B2 Hatch", "B4 SUV", "B6 EV"],
-    "Brand C": ["C3 SUV", "C7 Pickup"],
+    "Toyota": ["Corolla", "RAV4", "bZ4X"],
+    "Hyundai": ["i20", "Tucson", "Ioniq 5"],
+    "Mitsubishi": ["Outlander", "L200"],
 }
 
 # monthly base leads, then stage probabilities:
@@ -22,7 +23,7 @@ BRANDS = {
 CHANNELS = {
     "Instagram":    (260, 0.85, 0.22, 0.55, 0.35, 0.25),
     "Facebook":     (180, 0.85, 0.20, 0.50, 0.33, 0.22),
-    "Classifieds":  (140, 0.80, 0.30, 0.50, 0.30, 0.20),
+    "Turbo.az":     (140, 0.80, 0.30, 0.50, 0.30, 0.20),
     "Call center":  (150, 1.00, 0.45, 0.65, 0.45, 0.08),
     "Google Ads":   (120, 0.90, 0.35, 0.60, 0.40, 0.12),
     "Website form": (90,  0.90, 0.40, 0.60, 0.42, 0.10),
